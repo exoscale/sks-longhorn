@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: Secret 
+metadata:
+  name: exoscale-sos-secret
+  namespace: longhorn-system
+type: Opaque
+data:
+  # Zone in base64
+  AWS_ENDPOINTS: aHR0cHM6Ly9zb3MtZGUtZnJhLTEuZXhvLmlv # https://sos-at-vie-1.exo.io
+  AWS_ACCESS_KEY_ID: xxx # access key for the bucket in base64 
+  AWS_SECRET_ACCESS_KEY: yyy # secret key for the bucket in base64
